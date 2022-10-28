@@ -163,7 +163,7 @@ body .site {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 8px;
-  transition: all 200ms ease-in-out;
+  transition: all 150ms ease-in-out;
   white-space: nowrap;
 }
 
@@ -243,7 +243,7 @@ body .site {
 }
 
 .site-title svg {
-  transition: all 200ms;
+  transition: all 150ms;
 }
 
 .site-title a:hover svg {
@@ -302,7 +302,7 @@ textarea {
   left: 0;
   position: absolute;
   top: -22px;
-  transition: all 0.22s;
+  transition: all 150ms;
   z-index: 22;
 }
 
@@ -692,7 +692,7 @@ pre.code {
   text-decoration: underline;
   text-decoration-color: var(--color-link-text);
   text-underline-offset: 6px;
-  transition: all .18s ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .link-demo::after {
@@ -712,7 +712,7 @@ pre.code {
 @media (prefers-reduced-motion: no-preference) {
   .link-demo:focus {
     outline-offset: 5px;
-    transition: outline-offset .25s ease;
+    transition: outline-offset 150ms ease;
   }
 }
 
