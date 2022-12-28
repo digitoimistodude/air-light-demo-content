@@ -5,7 +5,7 @@
  * @Author: Timi Wahalahti
  * @Date:   2021-05-17 13:34:52
  * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-08-25 14:19:42
+ * @Last Modified time: 2022-12-28 14:56:14
  *
  * @package air-light
  */
@@ -13,7 +13,7 @@
 ?>
 <section class="block block-hero-big-image">
   <div class="image-background" aria-hidden="true">
-      <img loading="lazy" alt="A decorative picture about ferris wheel" src="https://blocks.airwptheme.com/media/bruno-abatti-Xzer0SqKPEE-unsplash.jpeg">
+      <img loading="lazy" alt="A decorative picture about ferris wheel" src="https://blocks.airwptheme.com/media/bruno-abatti-Xzer0SqKPEE-unsplash-1-scaled.jpg">
 
       <div class="container">
         <div class="content">
