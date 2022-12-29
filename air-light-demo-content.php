@@ -789,11 +789,6 @@ body .component p:last-child {
   }
 }
 
-/* Disable placeholder in demo */
-body:not(.js-nav-active) .site-main {
-  display: unset;
-}
-
 .site-main::after {
   display: none;
 }
