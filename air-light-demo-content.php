@@ -790,7 +790,7 @@ body .component p:last-child {
 }
 
 /* Disable placeholder in demo */
-.site-main {
+body:not(.js-nav-active) .site-main {
   display: unset;
 }
 
