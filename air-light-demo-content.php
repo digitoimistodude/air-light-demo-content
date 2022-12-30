@@ -783,7 +783,7 @@ body .component p:last-child {
     color: var(--color-white);
   }
 
-  @media(max-width: 430px) {
+  @media(max-width: 450px) {
     .site-branding::before,
     .site-branding::after {
       display: none;
