@@ -771,7 +771,7 @@ body .component p:last-child {
   }
 
   .menu-item-get-link > a {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-14);
     text-align: center;
     justify-content: center;
     padding-bottom: 10px;
