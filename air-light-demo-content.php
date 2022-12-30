@@ -764,6 +764,11 @@ body .component p:last-child {
     margin-left: 10px;
   }
 
+  .menu-item-get-link > .button-nav:hover,
+  .menu-item-get-link > .button-nav:focus {
+    background-color: #1146aa;
+  }
+
   .nav-toggle-label {
     display: none;
   }
