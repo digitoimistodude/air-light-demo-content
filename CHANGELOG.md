@@ -1,3 +1,7 @@
+### 2.1.1: 2022-12-30
+
+* Fix mobile breakpoint for the upcoming Air-light version
+
 ### 2.1.0: 2022-12-29
 
 * Fix outdated image url
