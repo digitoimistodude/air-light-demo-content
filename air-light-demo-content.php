@@ -246,8 +246,10 @@ body .site {
   transition: all 150ms;
 }
 
-.site-title a:hover svg {
-  fill: var(--color-science-blue);
+@media (min-width: 1030px) {
+  .site-title a:hover svg {
+   fill: var(--color-science-blue);
+  }
 }
 
 .menu-item-get-link > a:focus,
