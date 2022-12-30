@@ -220,7 +220,7 @@ body .site {
   width: 70px;
 }
 
-@media (min-width: 1030px) and (max-width: 1140px) {
+@media (min-width: 1030px) and (max-width: 1200px) {
   .site-branding::before,
   .site-branding::after {
     display: none;
