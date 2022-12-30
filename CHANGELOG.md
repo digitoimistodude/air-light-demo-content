@@ -1,3 +1,11 @@
+### 2.1.2: 2022-12-31
+
+* Fix nav button background color on mobile
+* Only hover logo on desktop
+* Smaller button on mobile
+* Fix breakpoint for small phones
+* Small iPhone compatibility
+
 ### 2.1.1: 2022-12-30
 
 * Fix mobile breakpoint for the upcoming Air-light version
