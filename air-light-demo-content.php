@@ -147,6 +147,10 @@ body .site {
   .site-header {
     --margin-body: 4.7rem var(--padding-container-horizontal);
   }
+
+  .site-footer {
+    margin-top: 4rem;
+  }
 }
 
 /* Get-button */
