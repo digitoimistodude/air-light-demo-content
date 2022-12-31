@@ -1,3 +1,8 @@
+### 2.1.3: 2022-12-31
+
+* Fix block widths
+* Fix component styles
+
 ### 2.1.2: 2022-12-31
 
 * Fix nav button background color on mobile

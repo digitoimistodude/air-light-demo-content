@@ -276,10 +276,11 @@ textarea {
   border-bottom: 1px solid var(--color-cyan-bright);
   border-top: 1px solid var(--color-black);
   justify-self: center;
-  margin: var(--margin-body);
-  max-width: 1900px;
+  margin: var(--margin-body) auto;
+  max-width: calc(1620px - 40px);
   overflow: visible;
   padding: var(--margin-body);
+  width: calc(100% - 4rem);
   z-index: 4;
 }
 
@@ -658,7 +659,6 @@ pre.code {
   display: flex;
   flex-wrap: wrap;
   margin-top: 6rem;
-  margin-bottom: -4rem;
   align-items: flex-start;
   gap: 4rem;
 }
