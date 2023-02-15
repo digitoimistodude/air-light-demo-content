@@ -1,6 +1,7 @@
-### [Unreleased]
+### 2.1.4: 2023-03-15
 
 * Fix Padding for blocks
+* Validate HTML
 
 ### 2.1.3: 2022-12-31
 

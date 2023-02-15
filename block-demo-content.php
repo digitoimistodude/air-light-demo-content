@@ -5,7 +5,7 @@
  * @Author: Timi Wahalahti
  * @Date:   2021-05-17 13:34:52
  * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-12-31 02:27:46
+ * @Last Modified time: 2023-02-15 17:35:42
  *
  * @package air-light
  */
@@ -31,7 +31,7 @@
               <a class="button button-large" href="https://airwptheme.com">
                 See all features
               </a>
-            </ul>
+            </p>
           </div>
         </div>
       </div>
