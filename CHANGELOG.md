@@ -1,3 +1,7 @@
+### 2.1.5: 2024-01-10
+
+* Fix footer as per air-light PR #200
+
 ### 2.1.4: 2023-03-15
 
 * Fix Padding for blocks
