@@ -5,7 +5,7 @@
  *
  * Plugin URI: https://github.com/digitoimistodude/air-light-demo-content
  * Description: Provides the demo CSS and Gutenberg block for Air-light starter theme as presented in airwptheme.com/demo.
- * Version: 2.1.6
+ * Version: 2.1.7
  * Author: Digitoimisto Dude Oy
  * Author URI: https://www.dude.fi
  * Requires at least: 5.0
@@ -55,7 +55,8 @@ function add_get_button( $items, $args ) {
   return $items;
 }
 
-function demo_css() { ?>
+function demo_css() {
+?>
 <style>
 /* Demo vars */
 :root {
@@ -144,7 +145,7 @@ body .site {
 
 @media (max-width: 600px) {
   .site-header {
-    --margin-body: 4.7rem var(--padding-container-horizontal);
+    --margin-body: 4.7rem var(--spacing-container-padding-inline);
   }
 
   .site-footer {
@@ -289,7 +290,7 @@ textarea {
 
 @media (max-width: 600px) {
   .block {
-    --margin-body: 4.7rem var(--padding-container-horizontal);
+    --margin-body: 4.7rem var(--spacing-container-padding-inline);
   }
 }
 
@@ -600,8 +601,8 @@ pre.code {
 @media (max-width: 760px) {
   .editor-styles-wrapper .block-hero-big-image .container,
   .site-main .block-hero-big-image .container {
-    --typography-size-h1: 28px;
-    --typography-size-paragraphs: 16px;
+    --typography-h1-size: 28px;
+    --typography-paragraph-size: 16px;
   }
 
   .editor-styles-wrapper .block-hero-big-image .content,
@@ -790,7 +791,7 @@ body .component p:last-child {
   }
 
   .menu-item-get-link {
-    padding: var(--padding-container-horizontal);
+    padding: var(--spacing-container-padding-inline);
   }
 
   .menu-item-get-link > a {

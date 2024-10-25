@@ -1,3 +1,7 @@
+### 2.1.7: 2024-10-26
+
+* Fix regression in Air-light 9.4.5 compatibility regarding the mobile version
+
 ### 2.1.6: 2024-10-25
 
 * Add compatibility for Air-light 9.4.5
