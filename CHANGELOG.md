@@ -1,3 +1,7 @@
+### 2.1.6: 2024-10-25
+
+* Add compatibility for Air-light 9.4.5
+
 ### 2.1.5: 2024-01-10
 
 * Fix footer as per air-light PR #200

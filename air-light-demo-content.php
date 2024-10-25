@@ -5,11 +5,11 @@
  *
  * Plugin URI: https://github.com/digitoimistodude/air-light-demo-content
  * Description: Provides the demo CSS and Gutenberg block for Air-light starter theme as presented in airwptheme.com/demo.
- * Version: 2.1.5
+ * Version: 2.1.6
  * Author: Digitoimisto Dude Oy
  * Author URI: https://www.dude.fi
  * Requires at least: 5.0
- * Tested up to: 6.0.0
+ * Tested up to: 6.0.2
  * License: GPL-3.0+
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -75,11 +75,11 @@ function demo_css() { ?>
   --color-hover-sub-menu: var(--color-valhalla);
   --color-dropdown-toggle: var(--color-valhalla);
   --box-shadow-sub-menu: transparent;
-  --font-weight-main-level: var(--font-weight-semibold);
+  --typography-weight-main-level: var(--typography-weight-semibold);
   --border-radius-input-field: 30px;
   --color-button-background: var(--color-science-blue);
   --color-background-site: #f3f3f3;
-  --font-size-28: 28px;
+  --typography-size-28: 28px;
   --color-background-nav-mobile-header: var(--color-black);
   --margin-body: 4.7rem;
   --color-border-forms: #ccc;
@@ -125,9 +125,13 @@ body .site {
     background-color: var(--color-background-site);
   }
 
+  .menu-items {
+    padding-top: 2px;
+  }
+
   .site-header {
-    padding-left: var(--margin-body);
-    padding-right: var(--margin-body);
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
@@ -154,14 +158,14 @@ body .site {
   background-color: var(--color-science-blue);
   border-radius: var(--border-radius-input-field);
   color: var(--color-white);
-  font-size: var(--font-size-14);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--typography-size-14);
+  font-weight: var(--typography-weight-semibold);
   gap: .5rem;
   display: flex;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 8px;
+  padding-top: 12px;
   transition: all 150ms ease-in-out;
   white-space: nowrap;
 }
@@ -174,7 +178,7 @@ body .site {
 
 /* Other buttons */
 .site-main .block .button {
-  font-size: var(--font-size-14);
+  font-size: var(--typography-size-14);
   padding-bottom: 8px;
   padding-left: 20px;
   padding-right: 20px;
@@ -192,15 +196,15 @@ body .site {
 
 .site-title > a {
   color: var(--color-black);
-  font-size: var(--font-size-14);
-  font-weight: var(--font-weight-bold);
+  font-size: var(--typography-size-14);
+  font-weight: var(--typography-weight-bold);
 }
 
 .site-branding::before {
   content: 'by';
   display: inline-block;
-  font-size: var(--font-size-14);
-  font-weight: var(--font-weight-bold);
+  font-size: var(--typography-size-14);
+  font-weight: var(--typography-weight-bold);
   opacity: 0.5;
   order: 2;
   white-space: nowrap;
@@ -360,7 +364,7 @@ textarea {
 
 .site-main .block-hero-big-image .container .button-wrapper .button,
 .site-main .block-demo-centered .container .button {
-  font-size: var(--font-size-16);
+  font-size: var(--typography-size-16);
   max-width: 100%;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -530,7 +534,7 @@ pre.code {
 
 .editor-styles-wrapper .block-hero-big-image .container,
 .site-main .block-hero-big-image .container {
-  --font-size-h1: 52px;
+  --typography-size-h1: 52px;
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -596,8 +600,8 @@ pre.code {
 @media (max-width: 760px) {
   .editor-styles-wrapper .block-hero-big-image .container,
   .site-main .block-hero-big-image .container {
-    --font-size-h1: 28px;
-    --font-size-paragraphs: 16px;
+    --typography-size-h1: 28px;
+    --typography-size-paragraphs: 16px;
   }
 
   .editor-styles-wrapper .block-hero-big-image .content,
@@ -790,7 +794,7 @@ body .component p:last-child {
   }
 
   .menu-item-get-link > a {
-    font-size: var(--font-size-14);
+    font-size: var(--typography-size-14);
     text-align: center;
     justify-content: center;
     padding-bottom: 10px;
