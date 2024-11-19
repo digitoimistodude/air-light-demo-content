@@ -1,3 +1,9 @@
+### 2.1.8: 2024-11-19
+
+* Add font-weights for Mona Sans for Air-light 9.4.6
+* Style fixes for demo site
+* Update rems to pixels according to Air-light, #192
+
 ### 2.1.7: 2024-10-26
 
 * Fix regression in Air-light 9.4.5 compatibility regarding the mobile version
