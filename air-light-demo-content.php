@@ -5,7 +5,7 @@
  *
  * Plugin URI: https://github.com/digitoimistodude/air-light-demo-content
  * Description: Provides the demo CSS and Gutenberg block for Air-light starter theme as presented in airwptheme.com/demo.
- * Version: 2.1.8
+ * Version: 2.1.9
  * Author: Digitoimisto Dude Oy
  * Author URI: https://www.dude.fi
  * Requires at least: 5.0
@@ -59,9 +59,11 @@ function demo_css() {
 ?>
 <style>
 /* Demo vars */
-:root {
+div,
+:root { 
   --color-science-blue: #0049d1;
   --color-black: #000;
+  --color-valhalla: #000;
   --color-wild-blue-yonder: #737fbf;
   --color-baby-blue: #60f4ea;
   --color-cyan-bright: #60f4ea;
@@ -84,6 +86,7 @@ function demo_css() {
   --color-background-nav-mobile-header: var(--color-black);
   --margin-body: 47px;
   --color-border-forms: #ccc;
+  --padding-sub-menu-horizontal-mobile: 10px;
 }
 
 /* Font */
@@ -106,13 +109,9 @@ body {
 }
 
 .menu-item .sub-menu a,
-.menu-item>a,
+.menu-item > a,
 .menu-item-clickable {
   font-weight: 600;
-}
-
-.menu-item>a:hover {
-  color: var(--color-science-blue) !important;
 }
 
 a.nav-link.is-external-link::after {
@@ -129,8 +128,13 @@ body .site {
 
 body .site-header .site-header-inner {
   max-width: calc(1620px - 40px);
-  padding-left: 0;
-  padding-right: 0;
+}
+
+@media screen and (min-width: 1030px) {
+  body .site-header .site-header-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .site-header {
@@ -171,7 +175,7 @@ body .site-header .site-header-inner {
 }
 
 /* Get-button */
-.menu-item-get-link>a {
+.menu-item-get-link > a {
   align-items: center;
   background-color: var(--color-science-blue);
   border-radius: var(--border-radius-input-field);
@@ -204,7 +208,7 @@ body .site-header .site-header-inner {
 }
 
 /* Custom logo for demo */
-.site-title>a,
+.site-title > a,
 .site-branding {
   display: flex;
   gap: 10px;
@@ -212,7 +216,7 @@ body .site-header .site-header-inner {
   white-space: nowrap;
 }
 
-.site-title>a {
+.site-title > a {
   color: var(--color-black);
   font-size: var(--typography-size-14);
   font-weight: var(--typography-weight-bold);
@@ -275,9 +279,9 @@ body .site-header .site-header-inner {
   }
 }
 
-.menu-item-get-link>a:focus,
-.menu-item-get-link>a:hover {
-  background-color: var(--color-valhalla);
+.menu-item-get-link > a:focus,
+.menu-item-get-link > a:hover {
+  background-color: #000;
 }
 
 /* Article view */
@@ -400,6 +404,16 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.22;
+}
+
+@media(max-width: 800px) {
+  body .block-accessibility {
+    padding-top: 0;
+  }
+
+  body .block-content-columns {
+    padding-top: 20px !important;
+  }
 }
 
 .block.block-accessibility.block-content-columns h2 {
@@ -575,6 +589,12 @@ pre.code {
 
 .block-hero-big-image h1 {
   line-height: 1.23;
+}
+
+@media (max-width: 800px) {
+  .block-hero-big-image h1 {
+    font-size: 32px;
+  }
 }
 
 .site-main .block-hero-big-image ul.multiple-buttons-wrapper {
@@ -836,8 +856,8 @@ body .component p:last-child {
   }
 
   .site-branding::before,
-  .site-title>a {
-    color: var(--color-white);
+  .site-title >a {
+    color: #000;
   }
 
   @media(max-width: 450px) {
@@ -849,13 +869,23 @@ body .component p:last-child {
   }
 
   .site-branding::after {
-    background: transparent url('data:image/svg+xml,%3Csvg%20class%3D%22logo-dude%22%20aria-hidden%3D%22true%22%20width%3D%22100%22%20height%3D%2221.45%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220%22%20y%3D%220%22%20viewBox%3D%220%200%202267.72%20453.54%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M950.26%20211.64c0%2037.66-12.7%20111.12-97.79%20111.12-85.61%200-98.4-73.47-98.4-111.12V5.23H590.91v217.92c0%20138.73%2097.78%20221.55%20261.55%20221.55%20163.39%200%20260.93-82.82%20260.93-221.55V5.23H950.26v206.41zM2264.41%20127.17V5.23h-505.2v439.48h505.2V322.76h-345.08v-48.71h286.91v-98.17h-286.91v-48.71zM317.21%205.23H3v439.48h314.21c108.81%200%20219.87-87.76%20219.87-219.74%200-132.83-111.06-219.74-219.87-219.74zm-39.84%20317.53H166.14v-195.4h111.23c57.58%200%2097.7%2045.79%2097.7%2097.61%200%2052.51-40.12%2097.79-97.7%2097.79zM1485.51%205.23H1171.3v439.48h314.21c108.81%200%20219.87-87.76%20219.87-219.74%200-132.83-111.06-219.74-219.87-219.74zm-39.84%20317.53h-111.23v-195.4h111.23c57.58%200%2097.7%2045.79%2097.7%2097.61%200%2052.51-40.12%2097.79-97.7%2097.79z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') no-repeat;
+    background: transparent url('data:image/svg+xml,%3Csvg%20class%3D%22logo-dude%22%20aria-hidden%3D%22true%22%20width%3D%22100%22%20height%3D%2221.45%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220%22%20y%3D%220%22%20viewBox%3D%220%200%202267.72%20453.54%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M950.26%20211.64c0%2037.66-12.7%20111.12-97.79%20111.12-85.61%200-98.4-73.47-98.4-111.12V5.23H590.91v217.92c0%20138.73%2097.78%20221.55%20261.55%20221.55%20163.39%200%20260.93-82.82%20260.93-221.55V5.23H950.26v206.41zM2264.41%20127.17V5.23h-505.2v439.48h505.2V322.76h-345.08v-48.71h286.91v-98.17h-286.91v-48.71zM317.21%205.23H3v439.48h314.21c108.81%200%20219.87-87.76%20219.87-219.74%200-132.83-111.06-219.74-219.87-219.74zm-39.84%20317.53H166.14v-195.4h111.23c57.58%200%2097.7%2045.79%2097.7%2097.61%200%2052.51-40.12%2097.79-97.7%2097.79zM1485.51%205.23H1171.3v439.48h314.21c108.81%200%20219.87-87.76%20219.87-219.74%200-132.83-111.06-219.74-219.87-219.74zm-39.84%20317.53h-111.23v-195.4h111.23c57.58%200%2097.7%2045.79%2097.7%2097.61%200%2052.51-40.12%2097.79-97.7%2097.79z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') no-repeat;
     background-size: contain !important;
   }
 }
 
 .site-main::after {
   display: none;
+}
+
+.js-nav-active .site-branding .site-title .screen-reader-text,
+.js-nav-active .site-branding::before {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.js-nav-active .site-branding::after {
+  background: transparent url('data:image/svg+xml,%3Csvg%20class%3D%22logo-dude%22%20aria-hidden%3D%22true%22%20width%3D%22100%22%20height%3D%2221.45%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220%22%20y%3D%220%22%20viewBox%3D%220%200%202267.72%20453.54%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M950.26%20211.64c0%2037.66-12.7%20111.12-97.79%20111.12-85.61%200-98.4-73.47-98.4-111.12V5.23H590.91v217.92c0%20138.73%2097.78%20221.55%20261.55%20221.55%20163.39%200%20260.93-82.82%20260.93-221.55V5.23H950.26v206.41zM2264.41%20127.17V5.23h-505.2v439.48h505.2V322.76h-345.08v-48.71h286.91v-98.17h-286.91v-48.71zM317.21%205.23H3v439.48h314.21c108.81%200%20219.87-87.76%20219.87-219.74%200-132.83-111.06-219.74-219.87-219.74zm-39.84%20317.53H166.14v-195.4h111.23c57.58%200%2097.7%2045.79%2097.7%2097.61%200%2052.51-40.12%2097.79-97.7%2097.79zM1485.51%205.23H1171.3v439.48h314.21c108.81%200%20219.87-87.76%20219.87-219.74%200-132.83-111.06-219.74-219.87-219.74zm-39.84%20317.53h-111.23v-195.4h111.23c57.58%200%2097.7%2045.79%2097.7%2097.61%200%2052.51-40.12%2097.79-97.7%2097.79z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') no-repeat
 }
 
 </style>
