@@ -2,11 +2,6 @@
 /**
  * Custom block
  *
- * @Author: Timi Wahalahti
- * @Date:   2021-05-17 13:34:52
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2023-02-15 17:35:42
- *
  * @package air-light
  */
 

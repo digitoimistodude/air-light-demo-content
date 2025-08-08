@@ -1,3 +1,7 @@
+### 2.1.9: 2025-08-08
+
+* Compatibility with air-light 9.6.1, Ref: DEV-93, DEV-385
+
 ### 2.1.8: 2024-11-19
 
 * Add font-weights for Mona Sans for Air-light 9.4.6

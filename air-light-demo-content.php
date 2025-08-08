@@ -127,7 +127,14 @@ body .site {
   padding-top: 0;
 }
 
+body .site-header .site-header-inner {
+  max-width: calc(1620px - 40px);
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .site-header {
+  background: transparent;
   max-width: 100%;
 }
 
