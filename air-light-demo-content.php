@@ -5,11 +5,11 @@
  *
  * Plugin URI: https://github.com/digitoimistodude/air-light-demo-content
  * Description: Provides the demo CSS and Gutenberg block for Air-light starter theme as presented in airwptheme.com/demo.
- * Version: 2.1.9
+ * Version: 2.2.0
  * Author: Digitoimisto Dude Oy
  * Author URI: https://www.dude.fi
  * Requires at least: 5.0
- * Tested up to: 6.0.2
+ * Tested up to: 6.9.0
  * License: GPL-3.0+
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -18,22 +18,18 @@
  * @package air-light
  */
 
-add_filter( 'air_light_theme_settings', function ( $settings ) {
-  $settings['acf_blocks'][] = array(
-    'name'      => 'demo-content',
-    'title'     => 'Demo content',
-  );
-
-  return $settings;
-});
-
-add_filter( 'theme_file_path', function ( $path, $file ) {
-  if ( 'template-parts/blocks/demo-content.php' === $file ) {
-		return plugin_dir_path( __FILE__ ) . 'block-demo-content.php';
+// Automatically inject demo blocks on front page
+add_filter( 'the_content', function( $content ) {
+  if ( ! is_front_page() ) {
+    return $content;
   }
 
-  return $path;
-}, 10, 2 );
+  ob_start();
+  include plugin_dir_path( __FILE__ ) . 'block-demo-content.php';
+  $demo_blocks = ob_get_clean();
+
+  return $demo_blocks . $content;
+} );
 
 // Add demo CSS
 add_action( 'wp_head', 'demo_css' );
@@ -60,8 +56,8 @@ function demo_css() {
 <style>
 /* Demo vars */
 div,
-:root { 
-  --color-science-blue: #0049d1;
+:root {
+  --color-accent: #000;
   --color-black: #000;
   --color-valhalla: #000;
   --color-wild-blue-yonder: #737fbf;
@@ -79,8 +75,7 @@ div,
   --color-dropdown-toggle: var(--color-valhalla);
   --box-shadow-sub-menu: transparent;
   --typography-weight-main-level: var(--typography-weight-semibold);
-  --border-radius-input-field: 30px;
-  --color-button-background: var(--color-science-blue);
+  --color-button-background: var(--color-accent);
   --color-background-site: #f3f3f3;
   --typography-size-28: 28px;
   --color-background-nav-mobile-header: var(--color-black);
@@ -177,8 +172,7 @@ body .site-header .site-header-inner {
 /* Get-button */
 .menu-item-get-link > a {
   align-items: center;
-  background-color: var(--color-science-blue);
-  border-radius: var(--border-radius-input-field);
+  background-color: var(--color-accent);
   color: var(--color-white);
   font-size: var(--typography-size-14);
   font-weight: var(--typography-weight-semibold);
@@ -192,19 +186,16 @@ body .site-header .site-header-inner {
   white-space: nowrap;
 }
 
-.button.has-icon {
+.block-demo-centered .wp-block-button__link,
+.wp-block-button__link.has-icon {
   align-items: center;
   gap: 5px;
   display: inline-flex;
+  max-width: unset;
 }
 
-/* Other buttons */
-.site-main .block .button {
-  font-size: var(--typography-size-14);
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 8px;
+.block-demo-centered .wp-block-button {
+  text-align: center;
 }
 
 /* Custom logo for demo */
@@ -275,7 +266,7 @@ body .site-header .site-header-inner {
 
 @media (min-width: 1030px) {
   .site-title a:hover svg {
-    fill: var(--color-science-blue);
+    fill: var(--color-accent);
   }
 }
 
@@ -388,14 +379,6 @@ textarea {
 
 .block-demo-centered img {
   object-position: top center;
-}
-
-.site-main .block-hero-big-image .container .button-wrapper .button,
-.site-main .block-demo-centered .container .button {
-  font-size: var(--typography-size-16);
-  max-width: 100%;
-  padding-bottom: 12px;
-  padding-top: 12px;
 }
 
 .block-demo-centered h2 {
@@ -526,11 +509,10 @@ pre.code {
   font-size: clamp(5px, 3.4vw, 30px);
 }
 
-
-
 .block-content-columns .vars li {
   align-items: center;
   display: flex;
+  white-space: nowrap;
 }
 
 @media (max-width: 1500px) {
@@ -610,7 +592,7 @@ pre.code {
 }
 
 .has-blue-text-gradient {
-  background-image: linear-gradient(-45deg, var(--color-black), var(--color-science-blue));
+  background-image: linear-gradient(-45deg, var(--color-black), #3f57e1);
 }
 
 .editor-styles-wrapper .block-hero-big-image .content,
@@ -751,10 +733,6 @@ pre.code {
   .components .component {
     max-width: 169px;
     padding: 15px;
-  }
-
-  .components .component .button {
-    font-size: 13px;
   }
 }
 

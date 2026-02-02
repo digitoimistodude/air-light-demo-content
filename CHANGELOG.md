@@ -1,3 +1,7 @@
+### 2.2.0: 2026-02-02
+
+* Add support for air-light 10.0.0, Ref: DEV-84, DEV-720
+
 ### 2.1.9: 2025-08-08
 
 * Compatibility with air-light 9.6.1, Ref: DEV-93, DEV-385
