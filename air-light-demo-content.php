@@ -79,9 +79,9 @@ div,
   --color-background-site: #f3f3f3;
   --typography-size-28: 28px;
   --color-background-nav-mobile-header: var(--color-black);
-  --margin-body: 47px;
+  --margin-body: 5rem;
   --color-border-forms: #ccc;
-  --padding-sub-menu-horizontal-mobile: 10px;
+  --wp--custom--grid-base: 1550px;
 }
 
 /* Font */
@@ -121,17 +121,6 @@ body .site {
   padding-top: 0;
 }
 
-body .site-header .site-header-inner {
-  max-width: calc(1620px - 40px);
-}
-
-@media screen and (min-width: 1030px) {
-  body .site-header .site-header-inner {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .site-header {
   background: transparent;
   max-width: 100%;
@@ -144,18 +133,6 @@ body .site-header .site-header-inner {
 
   .menu-items {
     padding-top: 2px;
-  }
-
-  .site-header {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
-@media (min-width: 1030px) and (max-width: 1100px) {
-  .site-header {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -287,7 +264,7 @@ textarea {
 
 /* Block decorations from blocks.airwptheme.com */
 .block {
-  background-image: linear-gradient(var(--color-black), #2f386f), linear-gradient(var(--color-black), var(--color-cyan-bright));
+  background-image: linear-gradient(var(--color-black), #2f386f), linear-gradient(var(--color-black), #2f386f);
   background-position: 0 0, 100% 0;
   background-repeat: no-repeat;
   background-size: 2px 100%;
@@ -295,11 +272,19 @@ textarea {
   border-top: 2px solid var(--color-black);
   justify-self: center;
   margin: var(--margin-body) auto;
-  max-width: calc(1620px - 40px);
+  max-width: calc(var(--wp--custom--grid-base) - calc(var(--spacing-container-padding-inline) * 2));
   overflow: visible;
   padding: var(--margin-body);
-  width: calc(100% - 4rem);
+  width: calc(100% - calc(var(--spacing-container-padding-inline) * 2));
   z-index: 4;
+}
+
+@media (max-width: 1570px) {
+  .block {
+    max-width: var(--wp--custom--grid-base);
+    margin-left: var(--spacing-container-padding-inline);
+    margin-right: var(--spacing-container-padding-inline);
+  }
 }
 
 .block p {
@@ -308,7 +293,7 @@ textarea {
 
 @media (max-width: 600px) {
   .block {
-    --margin-body: 4.7rem var(--spacing-container-padding-inline);
+    --margin-body: 5rem var(--spacing-container-padding-inline);
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -434,6 +419,8 @@ textarea {
 
 .site-main .block>.container {
   overflow: visible;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .site-main .block-content-columns .container,
