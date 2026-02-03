@@ -18,9 +18,9 @@
               Air-light is a WordPress starter theme for developers
             </h1>
 
-            <p>You are looking at thousands of hours of development work over a decade. Our aim is to build the greatest base for new WordPress websites out there. Remember, this is just a demo.</p>
+            <p>You're looking at thousands of hours of development work that have gone into this over the past decade. Our goal is to create the best possible foundation for new WordPress websites. Keep in mind that this is only a demo.</p>
 
-            <p>This demo has custom blocks enabled, but air-light doesn't ship with them. You'll need to build your blocks yourself.</p>
+            <p>This demo includes custom blocks, but Air-light itself doesn't come with them - you'll need to create your own blocks.</p>
 
             <p class="wp-block-button">
               <a class="wp-block-button__link" href="https://airwptheme.com">
@@ -41,7 +41,9 @@
     <div class="col col-content">
       <div class="wrapper">
         <h2 class="has-text-gradient">Accessible by nature</h2>
-        <p>Air-light is 100% accessible. It's a joy to browse with screen readers, keyboards and other assistive technology. Our navigation closes with esc even when hovering it with a mouse (try it)! We even have automated external link screen reader labels and visual arrow indicators for links. Our theme is constantly tested with assistive tools like NVDA.</p>
+        <p>Air-light is fully accessible and a pleasure to use with screen readers, keyboards, and other assistive technologies. The navigation even closes with the Esc key, even when you're hovering over it with a mouse (give it a try)!</p>
+
+        <p>We also include automated screen reader labels for external links and visual arrow indicators for links. The theme is regularly tested with assistive tools like NVDA.</p>
         <p class="wp-block-button">
           <a class="wp-block-button__link no-external-link-indicator has-icon" href="https://github.com/digitoimistodude/air-light">
             <svg width="16" height="16" viewBox="0 0 1792 1792" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1664 896q0 251-146.5 451.5T1139 1625q-27 5-39.5-7t-12.5-30v-211q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105T1386 856q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T578 459.5 492 446q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5T484 1274q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 89t.5 54q0 18-13 30t-40 7q-232-77-378.5-277.5T128 896q0-209 103-385.5T510.5 231 896 128t385.5 103T1561 510.5 1664 896z"></path></svg>
@@ -88,11 +90,11 @@
 
 <section class="block block-demo-centered has-image">
   <div class="container">
-    <h2 class="has-text-gradient">Gutenberg blocks make the website easy to update</h2>
-    <p>Air-light has 100% Gutenberg support.</p>
+    <h2 class="has-text-gradient">Gutenberg blocks make updating your website easy</h2>
+    <p>Air-light offers full support for Gutenberg, ACF,<br>core block variations and native React.js blocks.</p>
     <p class="wp-block-button">
-      <a class="wp-block-button__link no-external-link-indicator has-icon" href="https://docs.airwptheme.com/air-blocks/block-library">
-        Get started with block library
+      <a class="wp-block-button__link no-external-link-indicator has-icon" href="https://github.com/digitoimistodude/air-light">
+        Get started with blocks
       </a>
     </p>
   </div>
@@ -110,7 +112,7 @@
     <div class="col col-content">
       <div class="wrapper">
         <h2 class="has-text-gradient">Modular SCSS + CSS custom properties for everything</h2>
-        <p>When it comes to Cascading Style Sheets, we've got you covered. Air-light is bloat-free! Just open _colors.scss and you are good to go. Did you know that Air-light production-ready CSS weights only 99KB without compression?</p>
+        <p>When it comes to Cascading Style Sheets, we've got you covered. Air-light is completely bloat-free! Just open _colors.scss and you're good to go. Did you know that Air-light's production-ready CSS is under 80 kB without compression?</p>
         <p class="wp-block-button">
           <a class="wp-block-button__link no-external-link-indicator has-icon" href="https://github.com/digitoimistodude/air-light">
             <svg width="16" height="16" viewBox="0 0 1792 1792" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1664 896q0 251-146.5 451.5T1139 1625q-27 5-39.5-7t-12.5-30v-211q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105T1386 856q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T578 459.5 492 446q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5T484 1274q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 89t.5 54q0 18-13 30t-40 7q-232-77-378.5-277.5T128 896q0-209 103-385.5T510.5 231 896 128t385.5 103T1561 510.5 1664 896z"></path></svg>
@@ -142,8 +144,8 @@
 
     <div class="col col-content">
       <div class="wrapper">
-        <h2 class="has-text-gradient">All your favorite components built-in</h2>
-        <p>Air-light comes with minimal styles for typography, navigation and form elements like buttons.</p>
+        <h2 class="has-text-gradient">All your favorite components built in</h2>
+        <p>Air-light includes clean, minimal styles for typography, navigation, and form elements like buttons.</p>
         <p class="wp-block-button">
           <a class="wp-block-button__link no-external-link-indicator has-icon" href="https://github.com/digitoimistodude/air-light">
             <svg width="16" height="16" viewBox="0 0 1792 1792" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1664 896q0 251-146.5 451.5T1139 1625q-27 5-39.5-7t-12.5-30v-211q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105T1386 856q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T578 459.5 492 446q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5T484 1274q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 89t.5 54q0 18-13 30t-40 7q-232-77-378.5-277.5T128 896q0-209 103-385.5T510.5 231 896 128t385.5 103T1561 510.5 1664 896z"></path></svg>
@@ -200,7 +202,7 @@
     <div class="col col-content">
       <div class="wrapper">
         <h2 class="has-text-gradient">Yes, traditional PHP is still a thing</h2>
-        <p>We don't use PHP templating languages, because we think everyone should be able to code good-ol' PHP. We keep Air-light consistent with WordPress Coding Standard.</p>
+        <p>We don't use PHP templating languages because we believe everyone should be able to write good old PHP. Air-light stays fully consistent with the WordPress Coding Standard.</p>
         <p class="wp-block-button">
           <a class="wp-block-button__link no-external-link-indicator has-icon" href="https://github.com/digitoimistodude/air-light">
             <svg width="16" height="16" viewBox="0 0 1792 1792" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1664 896q0 251-146.5 451.5T1139 1625q-27 5-39.5-7t-12.5-30v-211q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105T1386 856q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T578 459.5 492 446q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5T484 1274q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 89t.5 54q0 18-13 30t-40 7q-232-77-378.5-277.5T128 896q0-209 103-385.5T510.5 231 896 128t385.5 103T1561 510.5 1664 896z"></path></svg>
@@ -228,8 +230,8 @@
 
 <section class="block block-demo-centered" style="margin-bottom: calc(var(--margin-body) * 2);">
   <div class="container">
-    <h2 class="has-text-gradient">...and more. But still less.</h2>
-    <p>Air-light light weights only under 20 KB gzipped and is accessible-ready, gutenberg-ready and multilingual-ready.</p>
+    <h2 class="has-text-gradient">...and more, but still less</h2>
+    <p>Air-light weighs just under 20 kB gzipped and is fully accessible,<br>Gutenberg-ready, and multilingual-ready.</p>
     <p class="wp-block-button">
       <a class="wp-block-button__link no-external-link-indicator has-icon" href="https://airwptheme.com">
         Check out all the features

@@ -384,7 +384,7 @@ textarea {
 }
 
 .block-demo-centered h2 {
-  font-size: clamp(3rem, 4vw, 7rem);
+  font-size: clamp(2rem, 4vw, 7rem);
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -402,7 +402,7 @@ textarea {
 }
 
 .block.block-accessibility.block-content-columns h2 {
-  font-size: clamp(3rem, 4vw, 5rem);
+  font-size: clamp(2rem, 4vw, 5rem);
 }
 
 .block.block-accessibility.block-content-columns .col-image a {
