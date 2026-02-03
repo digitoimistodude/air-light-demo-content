@@ -287,12 +287,12 @@ textarea {
 
 /* Block decorations from blocks.airwptheme.com */
 .block {
-  background-image: linear-gradient(var(--color-black), var(--color-cyan-bright)), linear-gradient(var(--color-black), var(--color-cyan-bright));
+  background-image: linear-gradient(var(--color-black), #2f386f), linear-gradient(var(--color-black), var(--color-cyan-bright));
   background-position: 0 0, 100% 0;
   background-repeat: no-repeat;
-  background-size: 1px 100%;
-  border-bottom: 1px solid var(--color-cyan-bright);
-  border-top: 1px solid var(--color-black);
+  background-size: 2px 100%;
+  border-bottom: 2px solid #2f386f;
+  border-top: 2px solid var(--color-black);
   justify-self: center;
   margin: var(--margin-body) auto;
   max-width: calc(1620px - 40px);
@@ -610,7 +610,7 @@ pre.code {
 }
 
 .has-blue-text-gradient {
-  background-image: linear-gradient(-45deg, var(--color-black), #3f57e1);
+  background-image: linear-gradient(-45deg, var(--color-black), #2f386f);
 }
 
 .editor-styles-wrapper .block-hero-big-image .content,

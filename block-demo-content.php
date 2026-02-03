@@ -213,12 +213,12 @@
 
     <div class="col col-image" aria-hidden="true">
       <div class="wrapper">
-        <pre class="code">&lt;<span style="color:#e289bc;">main</span> <span style="color:#7ccb90;">class</span>="<span style="color:#c2b957">site-main</span>"&gt;
+        <pre class="code">&lt;<span style="color:#e45daa;">main</span> <span style="color:#4ec56c;">class</span>="<span style="color:#d0c22a">site-main</span>"&gt;
   &lt;?php
-    the_content<span style="color:#fed600">()</span>;
-    air_edit_link<span style="color:#fed600">()</span>;
+    the_content<span style="color:#dc3f3f">()</span>;
+    air_edit_link<span style="color:#dc3f3f">()</span>;
   ?&gt;
-&lt;/<span style="color:#e289bc;">main</span>&gt;</pre>
+&lt;/<span style="color:#e45daa;">main</span>&gt;</pre>
       </div>
     </div>
 
