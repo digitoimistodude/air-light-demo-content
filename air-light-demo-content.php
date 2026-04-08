@@ -5,7 +5,7 @@
  *
  * Plugin URI: https://github.com/digitoimistodude/air-light-demo-content
  * Description: Provides the demo CSS and Gutenberg block for Air-light starter theme as presented in airwptheme.com/demo.
- * Version: 2.2.0
+ * Version: 2.2.1
  * Author: Digitoimisto Dude Oy
  * Author URI: https://www.dude.fi
  * Requires at least: 5.0
@@ -59,6 +59,7 @@ div,
 :root {
   --color-accent: #000;
   --color-black: #000;
+  --color-white: #fff;
   --color-valhalla: #000;
   --color-wild-blue-yonder: #737fbf;
   --color-baby-blue: #60f4ea;
@@ -74,11 +75,13 @@ div,
   --color-hover-sub-menu: var(--color-valhalla);
   --color-dropdown-toggle: var(--color-valhalla);
   --box-shadow-sub-menu: transparent;
-  --typography-weight-main-level: var(--typography-weight-semibold);
+  --typography-weight-main-level: 600;
   --color-button-background: var(--color-accent);
   --color-background-site: #f3f3f3;
-  --typography-size-28: 28px;
   --color-background-nav-mobile-header: var(--color-black);
+  --color-link-text: #000;
+  --color-link-text-hover: #000;
+  --spacing-container-padding-inline: var(--wp--custom--spacing--container-padding-inline, 1.25rem);
   --margin-body: 5rem;
   --color-border-forms: #ccc;
   --wp--custom--grid-base: 1550px;
@@ -151,8 +154,8 @@ body .site {
   align-items: center;
   background-color: var(--color-accent);
   color: var(--color-white);
-  font-size: var(--typography-size-14);
-  font-weight: var(--typography-weight-semibold);
+  font-size: 14px;
+  font-weight: 600;
   gap: 5px;
   display: flex;
   padding-bottom: 12px;
@@ -186,15 +189,15 @@ body .site {
 
 .site-title > a {
   color: var(--color-black);
-  font-size: var(--typography-size-14);
-  font-weight: var(--typography-weight-bold);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .site-branding::before {
   content: 'by';
   display: inline-block;
-  font-size: var(--typography-size-14);
-  font-weight: var(--typography-weight-bold);
+  font-size: 14px;
+  font-weight: 700;
   opacity: 0.5;
   order: 2;
   white-space: nowrap;
@@ -831,7 +834,7 @@ body .component p:last-child {
   }
 
   .menu-item-get-link>a {
-    font-size: var(--typography-size-14);
+    font-size: 14px;
     text-align: center;
     justify-content: center;
     padding-bottom: 10px;
