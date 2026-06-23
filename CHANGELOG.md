@@ -1,3 +1,7 @@
+### 2.2.2: 2026-06-23
+
+* Add support for air-light 10.2.0
+
 ### 2.2.1: 2026-04-08
 
 * Add support for air-light 10.1.1
